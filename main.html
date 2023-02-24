@@ -8,45 +8,38 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+
+<div class="container">
+        <div id="display"></div>
+        <div class="buttons">
+            <div class="btn" id="C" onclick="clearxyz()">C</div>
+            <div class="btn" id="divi" onclick="clickingxyz('/')">/</div>
+            <div class="btn" id="*" onclick="clickingxyz('*')">*</div>
+            <div class="btn" id="back" onclick="backxyz()">&larr;</div>
+
+            <div class="btn" id="7" onclick="clickingxyz('7')">7</div>
+            <div class="btn" id="8" onclick="clickingxyz('8')">8</div>
+            <div class="btn" id="9" onclick="clickingxyz('9')">9</div>
+            <div class="btn" id="-" onclick="clickingxyz('-')">-</div>
+
+            <div class="btn" id="4" onclick="clickingxyz('4')">4</div>
+            <div class="btn" id="5" onclick="clickingxyz('5')">5</div>
+            <div class="btn" id="6" onclick="clickingxyz('6')">6</div>
+            <div class="btn" id="plus" onclick="clickingxyz('+')">+</div>
+
+            <div class="btn" id="1" onclick="clickingxyz('1')">1</div>
+            <div class="btn" id="2" onclick="clickingxyz('2')">2</div>
+            <div class="btn" id="3" onclick="clickingxyz('3')">3</div>
+            <div class="btn" id="." onclick="clickingxyz('.')">.</div>
+
+            <div class="btn" id="op" onclick="clickingxyz('(')">(</div>
+            <div class="btn" id="0" onclick="clickingxyz('0')">0</div>
+            <div class="btn" id="cl" onclick="clickingxyz(')')">)</div>
+            <div class="btn" id="equal" onclick="evalxyz()">=</div>
+        </div>
+    </div>
     <script type="text/javascript" src="./script.js">
-</script>
-	<div>
-		<input type="text" id="display" />
-	</div>
-	<div>
-		<button id="back" value="clear" onclick="solve(this.value)">clear</button>
-		<button id="divi" value="/" onclick="solve(this.value)">/</button>
-		<button id="*" value="*" onclick="solve(this.value)">*</button>
-		<button id="del" value="clear" onclick="backspace()"><</button>
-	</div>
-	<div>
-		<button id="7" value="7" onclick="solve(this.value)">7</button>
-	    <button id="8" value="8" onclick="solve(this.value)">8</button>
-	    <button id="9" value="9" onclick="solve(this.value)">9</button>
-		<button id="minus" value="-" onclick="solve(this.value)">-</button>
-	</div>
-	<div>
-		<button id="4" value="4" onclick="solve(this.value)">4</button>
-	    <button id="5" value="5" onclick="solve(this.value)">5</button>
-	    <button id="6" value="6" onclick="solve(this.value)">6</button>
-	    <button id="plus" value="+" onclick="solve(this.value)">+</button>
-	</div>
-
-	<div>
-		   <button id="1" value="1" onclick="solve(this.value)">1</button>
-		    <button id="2" value="2" onclick="solve(this.value)">2</button>
-		    <button id="3" value="3" onclick="solve(this.value)">3</button>
-	     <button id="dot" value="." onclick="solve(this.value)">.</button>
-	</div>
-
-	<div>
-		<button id="op" value="(" onclick="solve(this.value)">(</button> 
-		<button id="0" value="0" onclick="solve(this.value)">0</button> 
-		<button id="cl" value=")" onclick="solve(this.value)">)</button>
-	    <button id="equal" value="ans" onclick="solve(this.value)">=</button>
-	</div>
-    
-    
+</script>    
    
 </body>
 

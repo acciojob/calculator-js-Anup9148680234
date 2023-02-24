@@ -1,27 +1,17 @@
-//your JS code here. If required.
-let input = document.getElementById("display");
-let expression = "";
-function solve(e) {
-  // console.log(e)
-  if (e === "ans") {
-    // evaluate the expression
-    let result = eval(expression);
-    console.log(result);
-    input.value = result;
-  } else if (e === "back") {
-    expression = "";
-    input.value = "";
-  } else {
-    expression += e;
-    console.log(expression);
-    input.value = expression;
-  }
-}
+const express = require('express');
+const path = require('path');
 
-function backspace() {
-    var inputValue = input.value;
+const app = express();
 
-    var newValue = inputValue.slice(0, -1);
+app.use(express.static(__dirname))
 
-    input.value = newValue;
-  }
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname + '/main.html'));
+});
+//your code here
+app.post('/add', (req, res) => {
+  const {a,b} = req.body;
+  res.status(200).send(a+b);
+  // res.sendFile(path.join(__dirname + '/main.html'));
+});
+module.exports = app;
