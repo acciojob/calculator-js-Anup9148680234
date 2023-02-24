@@ -8,7 +8,7 @@ function solve(e) {
     let result = eval(expression);
     console.log(result);
     input.value = result;
-  } else if (e === "clear") {
+  } else if (e === "back") {
     expression = "";
     input.value = "";
   } else {
