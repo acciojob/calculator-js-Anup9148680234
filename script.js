@@ -1,5 +1,5 @@
 //your JS code here. If required.
-let input = document.getElementById("input");
+let input = document.getElementById("display");
 let expression = "";
 function solve(e) {
   // console.log(e)
